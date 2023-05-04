@@ -47,13 +47,12 @@ const promptUser = () => {
         ${shape.render()}
 
         <text x="150" y="125" font-size="60" text-anchor="middle" fill="${response.textColor}">${response.text}</text>
-
 </svg>`
 
         })
         .then((svg) => {
-            fs.writeFile('logo.svg', svg, (err) =>
-                err ? console.log(err) : console.log('Success! Your logo has been created.')
+            fs.writeFile('./examples/logo.svg', svg, (err) =>
+                err ? console.log(err) : console.log('Success! Your logo.svg has been created.')
             );
         })
 };
