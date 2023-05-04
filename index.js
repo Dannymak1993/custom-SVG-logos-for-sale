@@ -11,10 +11,10 @@ const promptUser = () => {
             validate: (text) => text.length < 4 || "logo must not contain more then 3 letters"
         },
         {
-            type: 'list',
-            message: 'Select a text color:',
+            type: 'input',
+            message: 'Enter a text color (in hexadecimal format):',
             name: 'textColor',
-            choices: ['red', 'blue', 'green'],
+            validate: (color) => /^#([0-9A-F]{3}){1,2}$/i.test(color) || 'Invalid color format. Please enter a valid hexadecimal color code.'
         },
         {
             type: 'list',
@@ -23,11 +23,12 @@ const promptUser = () => {
             choices: ['circle', 'triangle', 'square'],
         },
         {
-            type: 'list',
-            message: 'Select a shape color:',
+            type: 'input',
+            message: 'Enter a shape color (in hexadecimal format):',
             name: 'shapeColor',
-            choices: ['yellow', 'orange', 'purple'],
+            validate: (color) => /^#([0-9A-F]{3}){1,2}$/i.test(color) || 'Invalid color format. Please enter a valid hexadecimal color code.'
         },
+    
     ])
 
         .then((response) => {
