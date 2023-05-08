@@ -33,13 +33,13 @@ const promptUser = () => {
 
         .then((response) => {
             let shape
-            if (response.shape = "triangle") {
+            if (response.shape === "triangle") {
                 shape = new Triangle();
             }
-            if (response.shape = "circle") {
+            else if (response.shape === "circle") {
                 shape = new Circle();
             }
-            if (response.shape = "square") {
+            else if (response.shape === "square") {
                 shape = new Square();
             }
             shape.setColor(response.shapeColor);
