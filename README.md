@@ -17,8 +17,8 @@ A user just needs to open the integrated terminal in vscode, install the latest 
 
 ## Usage
 
-https://drive.google.com/file/d/1Kp13SL-5WzZc8CQmmHjXea-WbquFAe4R/view
-
+ https://drive.google.com/file/d/1mvd63l6a3LIwraqOYWuD3xehwRv2JUaZ/view
+ 
 Above is a link to the google drive with the video demo available on how to properly use this application. 
 
 
